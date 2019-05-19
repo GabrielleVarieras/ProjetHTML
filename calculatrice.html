@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="styleCV.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+				
+		<title>Calculatrice</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#egale").click(function(){
+					$("#resultat").slideDown(5000);
+				});
+			});
+		</script>
+	
+	</head>
+	<body>
+	
+	<div class="titre">
+		<h1>Calculatrice</h1>
+	</div><br>
+	
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Contact</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="siteCV.html">Accueil</a>
+				<a class="dropdown-item" href="siteCV_2.html">Expériences</a>
+				<a class="dropdown-item" href="siteCV_3.html">Formations</a>
+				<a class="dropdown-item" href="siteCV_4.html">Certifiactions, langues, centres d'intérêts</a>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="siteCV_5.html">Contact</a>
+		</li>
+	</ul><br>
+	
+	<script>
+	function calculer(){
+		var nombre1= document.getElementById("nb1").value;
+			
+		if(isNaN(nombre1))alert("veuillez saisir un nombre pour le choix du premier nombre");
+		else var nb1=parseFloat(nombre1);
+		
+		var nombre2= document.getElementById("nb2").value;
+			
+		if(isNaN(nombre2))alert("veuillez saisir un nombre pour le choix du deuxième nombre");
+		else var nb2=parseFloat(nombre2);
+		
+		if(document.getElementById("+").selected){
+			var resultat = nb1 + nb2;
+			document.getElementById("resultat").innerHTML = resultat;
+		}
+		
+		if(document.getElementById("-").selected){
+			var resultat = nb1 - nb2;
+			document.getElementById("resultat").innerHTML = resultat;
+		}
+		
+		if(document.getElementById("*").selected){
+			var resultat = nb1 * nb2;
+			document.getElementById("resultat").innerHTML = resultat;
+		}
+		
+		if(document.getElementById("/").selected){
+			var resultat = nb1 / nb2;
+			document.getElementById("resultat").innerHTML = resultat;
+		}
+		
+	}
+	</script>
+	
+	
+	<div class="calculette">
+		<div class="row">
+			<div class="col-sm">
+			  <input type="text" id="nb1" placeholder="choix premier nombre">
+			</div>
+			<div class="col-sm">
+			  <div class="selection">
+					<select class="form-control form-control-lg">
+					  <option id="+">+</option>
+					  <option id="-">-</option>
+					  <option id="*">*</option>
+					  <option id="/">/</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-sm">
+			  <input type="text" id="nb2" placeholder="choix deuxième nombre">
+			</div>
+			<div class="col-sm">
+			  <input type="button" id="egale" class="btn btn-light" name="egale" value="=" onclick ="calculer()">
+			</div>
+		</div>
+	</div>
+	
+ 
+	<div id="resultat"></div>
+		
+		<br>
+		
+	<nav aria-label="...">
+		<ul class="pagination">
+			<li class="page-item">
+				<a class="page-link" href="siteCV_4.html">Previous</a>
+			</li>
+			<li class="page-item"><a class="page-link" href="siteCV.html">1</a></li>
+			<li class="page-item"><a class="page-link" href="siteCV_2.html">2</a></li>
+			<li class="page-item"><a class="page-link" href="siteCV_3.html">3</a></li>
+			<li class="page-item"><a class="page-link" href="siteCV_4.html">4</a></li>
+			<li class="page-item active" aria-current="page">
+				<a class="page-link" href="calculatrice.html">5<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="page-item"><a class="page-link" href="siteCV_5.html">6</a></li>
+			<li class="page-item">
+				<a class="page-link" href="siteCV_5.html">Next</a>
+			</li>	
+		</ul>
+	</nav>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	
+	
+	
+	</body>
+</html>

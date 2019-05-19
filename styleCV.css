@@ -1,0 +1,73 @@
+body{
+	padding-left:200px;
+	padding-right:200px;
+	padding-top : 50px;
+	padding-bottom : 70px;
+}
+
+div.titre{
+	background-color : coral;
+	text-align : center;
+	color : #800000;
+}
+
+
+a.dropdown-item{
+	color : coral;
+}
+a.dropdown-toggle{
+	color : coral;
+}
+
+a.nav-link{
+	color : coral;
+}
+
+a.page-link{
+	color: coral;
+}
+
+h4.emploi{
+	color: #800000;
+	font-size : 100%;
+}
+
+h2.sous-titre{
+	color :#800000;
+	font-size : 150%
+}
+
+h4.diplome{
+	color: #800000;
+	font-size : 80%;
+}
+
+h2.langue{
+	color: #800000;
+	font-size : 150%;
+}
+
+h3.section{
+	color: #800000;
+	font-size : 150%;
+	background-color : #FFDEAD;
+}
+
+div.selection{
+	width : 200px;
+	
+}
+
+div.calculette{
+	background-color : #FFDEAD;
+}
+
+#nb1,#nb2{
+	height : 50px;
+}
+
+#resultat{
+	background-color : #FFDEAD;
+	text-align :center;
+	font-size : 200%;
+}
